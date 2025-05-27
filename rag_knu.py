@@ -53,8 +53,7 @@ def generate_answer(question: str, context: str, use_ollama: bool = False) -> st
 
     if use_ollama:
         response = requests.post(
-            url="http://192.168.88.106:11434/api/chat",
-            # url="http://95.87.94.239:11434/api/chat",
+            # url= insert URL
             json={
                 "model": "gemma3",  # Change model name as needed
                 "messages": messages,
